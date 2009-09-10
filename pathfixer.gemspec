@@ -8,10 +8,7 @@ Gem::Specification.new do |s|
   s.author = "Aliaksey Kandratsenka"
   s.email = "alk@tut.by"
   s.require_paths = ["lib"]
-  s.files = FileList[
-                     'Rakefile',
-                     'lib/**/*.rb',
-                    ]
+  s.files = ['README', *Dir['lib/**/*.rb']]
   s.has_rdoc = false
   s.description = "pathfixer is a gem plugin that synchronizes gem bindir with /usr/local/bin"
 end
