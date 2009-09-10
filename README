@@ -1,6 +1,11 @@
-= Path fixer: a gem plugin that ensures that all binaries from gems are symlinked to /usr/local/bin
+Path fixer: a gem plugin that ensures that all binaries from gems
+are symlinked to /usr/local/bin
+----------------------------------------------------------------------
 
-SUBJ
+Each time you install/remove gem this plugin will synchronize
+/usr/local/bin symlinks with rubygems bin directory. So it works 100%
+automagically.
 
-This fixes known issue with rubygems on Debian & Ubuntu which install gem binaries to /var/lib/gems/1.{8,9}/bin.
-And that directory is not in default PATH.
+This fixes known issue with rubygems on Debian & Ubuntu which install
+gem binaries to /var/lib/gems/1.{8,9}/bin. And that directory is not
+in default PATH.
