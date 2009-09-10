@@ -1,8 +1,6 @@
-require 'rubygems'
-require 'rake/rdoctask'
-require 'rake/gempackagetask'
+# -*- encoding: utf-8 -*-
 
-spec = Gem::Specification.new do |s|
+Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.summary = "gem plugin that synchronizes gem bindir with /usr/local/bin"
   s.name = "pathfixer"
@@ -16,8 +14,4 @@ spec = Gem::Specification.new do |s|
                     ]
   s.has_rdoc = false
   s.description = "pathfixer is a gem plugin that synchronizes gem bindir with /usr/local/bin"
-end
-
-Rake::GemPackageTask.new(spec) do |pkg|
-  pkg.need_tar_gz = true
 end
